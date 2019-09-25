@@ -77,7 +77,6 @@ function configuration() {
     # Edit the hostname file
     chroot mnt/ /bin/bash -c "echo \"$HOSTNAME\" > /etc/hostname"
 
-
     # Setup the user and root - from include/set_user_and_root.sh
     set_root
     set_user
