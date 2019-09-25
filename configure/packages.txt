@@ -1,0 +1,3 @@
+deb http://security.ubuntu.com/ubuntu/ bionic-security multiverse main restricted universe
+deb http://archive.ubuntu.com/ubuntu bionic-updates multiverse main restricted universe
+deb http://archive.ubuntu.com/ubuntu bionic-backports multiverse main restricted universe

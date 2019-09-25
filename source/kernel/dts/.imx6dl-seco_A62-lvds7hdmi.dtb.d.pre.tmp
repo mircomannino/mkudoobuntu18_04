@@ -1,0 +1,8 @@
+imx6dl-seco_A62-lvds7hdmi.o: \
+ arch/arm/boot/dts/imx6dl-seco_A62-lvds7hdmi.dts \
+ arch/arm/boot/dts/imx6dl.dtsi \
+ /home/mirco/Scrivania/UDOO-Neo/Ubuntu18-04/udoo-dev/linux_kernel/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ arch/arm/boot/dts/imx6dl-pinfunc.h arch/arm/boot/dts/imx6qdl.dtsi \
+ /home/mirco/Scrivania/UDOO-Neo/Ubuntu18-04/udoo-dev/linux_kernel/arch/arm/boot/dts/include/dt-bindings/clock/imx6qdl-clock.h \
+ /home/mirco/Scrivania/UDOO-Neo/Ubuntu18-04/udoo-dev/linux_kernel/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ arch/arm/boot/dts/skeleton.dtsi arch/arm/boot/dts/imx6qdl-seco_A62.dtsi

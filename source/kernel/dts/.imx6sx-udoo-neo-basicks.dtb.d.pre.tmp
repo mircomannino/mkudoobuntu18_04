@@ -1,0 +1,10 @@
+imx6sx-udoo-neo-basicks.o: arch/arm/boot/dts/imx6sx-udoo-neo-basicks.dts \
+ arch/arm/boot/dts/imx6sx-udoo-neo.dtsi \
+ /home/mirco/Scrivania/UDOO-Neo/Ubuntu18-04/udoo-dev/linux_kernel/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ arch/arm/boot/dts/imx6sx.dtsi \
+ /home/mirco/Scrivania/UDOO-Neo/Ubuntu18-04/udoo-dev/linux_kernel/arch/arm/boot/dts/include/dt-bindings/clock/imx6sx-clock.h \
+ /home/mirco/Scrivania/UDOO-Neo/Ubuntu18-04/udoo-dev/linux_kernel/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/mirco/Scrivania/UDOO-Neo/Ubuntu18-04/udoo-dev/linux_kernel/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ arch/arm/boot/dts/imx6sx-pinfunc.h arch/arm/boot/dts/skeleton.dtsi \
+ arch/arm/boot/dts/imx6sx-udoo-neo-basicks.dtsi \
+ arch/arm/boot/dts/imx6sx-udoo-neo-externalpins.dtsi
