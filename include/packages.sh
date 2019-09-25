@@ -14,7 +14,7 @@ function add_source_list() {
     chroot mnt/ /bin/bash -c "sudo add-apt-repository universe"
     chroot mnt/ /bin/bash -c "sudo add-apt-repository restricted"
     chroot mnt/ /bin/bash -c "sudo add-apt-repository multiverse"
-    cp $DIR_PACKAGES/../configure/packages.txt mnt/etc/apt/source.list
+    cp $DIR_PACKAGES/../configure/packages.txt mnt/etc/apt/sources.list
 }
 
 function install_packages() {
