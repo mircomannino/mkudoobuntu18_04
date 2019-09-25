@@ -10,10 +10,6 @@ source "$DIR_PACKAGES/utils/color.sh"
 function add_source_list() {
     echo_yellow "Adding source list"
     #chroot mnt/ /bin/bash -c "cp $DIR_PACKAGES/../configure/packages.txt /etc/apt/source.list";
-    chroot mnt/ /bin/bash -c "sudo add-apt-repository main"
-    chroot mnt/ /bin/bash -c "sudo add-apt-repository universe"
-    chroot mnt/ /bin/bash -c "sudo add-apt-repository restricted"
-    chroot mnt/ /bin/bash -c "sudo add-apt-repository multiverse"
     cp $DIR_PACKAGES/../configure/packages.txt mnt/etc/apt/sources.list
 }
 
