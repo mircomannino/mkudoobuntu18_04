@@ -2,7 +2,7 @@
 Tool to creating an SDcard with Udoobuntu18.04 image for **UDOO-Neo**
 
 ## Usage
-To create a new **udoobuntu18_04** image use:
+To create a new **udoobuntu18_04** image, use:
 ```
 sudo ./mkudoobuntu18_04.sh
 ```
