@@ -82,8 +82,7 @@ function configuration() {
     set_user
 
     # Install packages - from include/packages.sh
-    # TODO: Add the sources.list, view the default sources.lsit
-    # add_source_list----------------------------------------------------------> Da scommentare 
+    add_source_list
     install_packages
 
     echo_green "Configuration complete!"

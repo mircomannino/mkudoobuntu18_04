@@ -9,7 +9,6 @@ source "$DIR_PACKAGES/utils/color.sh"
 
 function add_source_list() {
     echo_yellow "Adding source list"
-    #chroot mnt/ /bin/bash -c "cp $DIR_PACKAGES/../configure/packages.txt /etc/apt/source.list";
     cp $DIR_PACKAGES/../configure/packages.txt mnt/etc/apt/sources.list
 }
 
