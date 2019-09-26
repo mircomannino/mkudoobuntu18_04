@@ -24,8 +24,8 @@ function first_stage() {
     echo_yellow "Starting setup"
 
     # Create the empty image file
-    echo "Creating a 700 MB image in $OUTPUT..."
-    dd if=/dev/zero of=$OUTPUT bs=1M count=700 status=noxfer >/dev/null 2>&1  # --> Da decommentare
+    echo "Creating the image file $OUTPUT..."
+    dd if=/dev/zero of=$OUTPUT bs=1M count=2048 status=noxfer >/dev/null 2>&1  # --> Da decommentare
     echo_green "Image created!"
     # Associate loop-device with .img file
     losetup $LOOP $OUTPUT || echo_red "Cannot set $LOOP"

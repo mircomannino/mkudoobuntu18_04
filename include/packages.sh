@@ -5,6 +5,7 @@
 # Included script
 DIR_PACKAGES=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 source "$DIR_PACKAGES/utils/color.sh"
+source "$DIR_PACKAGES/include/resize.sh"
 ################################################################################
 
 function add_source_list() {
@@ -19,7 +20,7 @@ function install_packages() {
     chroot mnt/ /bin/bash -c "apt update -y"
     chroot mnt/ /bin/bash -c "apt upgrade -y"
 
-    # Packages list
+    # # Packages list
     local BASE_PACKAGES=( openssh-server alsa-utils bash-completion policykit-1
       bluez blueman curl dosfstools fbset iw nano module-init-tools ntp unzip usbutils
       vlan wireless-tools wget wpasupplicant unicode-data console-data console-common
@@ -31,6 +32,7 @@ function install_packages() {
       imx-vpu-9t libfslcodec-9t libfslparser-9t libfslvpuwrap-9t hostapd dtweb )
     #dev library
     local BASE_PACKAGES+=( python-serial librxtx-java )
+
 
     echo_yellow Installing packages...
     for package in "${BASE_PACKAGES[@]}"
