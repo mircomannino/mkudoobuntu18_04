@@ -16,14 +16,16 @@ function add_source_list() {
 function install_packages() {
     # Update
     echo_yellow Installing update...
-    chroot mnt/ /bin/bash -c "apt-get update -y"
-    chroot mnt/ /bin/bash -c "apt-get upgrade -y"
+    chroot mnt/ /bin/bash -c "apt update -y"
+    chroot mnt/ /bin/bash -c "apt upgrade -y"
 
     # Install
     echo_yellow Installing packages...
-    chroot mnt/ /bin/bash -c "apt-get install net-tools -y"
-    chroot mnt/ /bin/bash -c "apt-get install i2c-tools -y"
     chroot mnt/ /bin/bash -c "apt-get install man-db -y"
+    chroot mnt/ /bin/bash -c "apt-get install net-tools -y"
+    chroot mnt/ /bin/bash -c "apt-get install rfkill -y"
+    chroot mnt/ /bin/bash -c "apt-get install wpasupplicant -y"
+    chroot mnt/ /bin/bash -c "apt-get install wireless-tools -y"
 
 
 }
