@@ -9,7 +9,8 @@ source "$DIR_PACKAGES/utils/color.sh"
 
 function add_source_list() {
     echo_yellow "Adding source list"
-    cp $DIR_PACKAGES/../configure/packages.txt mnt/etc/apt/sources.list
+    # cp $DIR_PACKAGES/../configure/packages.txt mnt/etc/apt/sources.list
+    install -m 644 $DIR_PACKAGES/../configure/sources.list "mnt/etc/apt/sources.list"
 }
 
 function install_packages() {
